@@ -4,8 +4,6 @@ RUN sudo apt-get update \
     && sudo apt-get upgrade \
     && sudo apt-get install zlib1g-dev libsqlite3-dev tar gzip libyaml-dev libcurl4
 
-RUN sudo docker-php-ext-install zip bcmath pdo pdo_mysql
-
 RUN sudo apt install python3 python3-venv python3-pip python3-yaml build-essential
 RUN sudo pip3 install awscli
 RUN sudo pip3 install awsebcli --upgrade
